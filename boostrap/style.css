@@ -1,0 +1,31 @@
+.row{
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.figure-img{
+  border: 5px solid black;
+  width: 100%;
+}
+
+.col-md-4 .carte{
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease-in;
+}
+
+.face{
+	display : none
+}
+
+.col-md-4:hover .carte{
+	transform: rotateY(180deg);
+}
+
+.carte:hover .dos{
+	display : none
+}
+
+.carte:hover .face{
+	transform: rotateY(180deg);
+	display : block
+}
