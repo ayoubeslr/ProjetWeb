@@ -1,0 +1,45 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+
+
+section{
+	width:80%;
+	margin:auto;
+
+	.card{
+      
+      background-image: url(../img/card_back.jpg);
+      background-size: contain;
+      transition: transform 1s;
+      transition-timing-function: ease-in-out;
+
+      img{
+        opacity:0;
+        transition: opacity 0.1s, transform 0.1s;
+        transition-delay: 0.5s;
+
+      }
+      p{
+        opacity:0;
+        transition: opacity 0.1s, transform 0.1s;
+        transition-delay: 0.5s;
+        background-color:black;
+        color:white;
+      }
+      &:hover {
+        transform: rotateY(180deg);
+        img{
+          opacity: 1;
+   		  transform: rotateY(180deg);
+        }
+        p{
+          opacity: 1;
+
+ 	      transform: rotateY(180deg);
+        }
+      }
+
+      }
+    }
